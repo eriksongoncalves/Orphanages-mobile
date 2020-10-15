@@ -1,0 +1,94 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add eslint eslint-plugin-typescript-eslint -D
+
+PATH: 
+  /Users/eriksonbezerra/.rvm/gems/ruby-2.6.3/bin:/Users/eriksonbezerra/.rvm/gems/ruby-2.6.3@global/bin:/Users/eriksonbezerra/.rvm/rubies/ruby-2.6.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/eriksonbezerra/.rvm/gems/ruby-2.6.3/bin:/Users/eriksonbezerra/.rvm/gems/ruby-2.6.3@global/bin:/Users/eriksonbezerra/.rvm/rubies/ruby-2.6.3/bin:/Users/eriksonbezerra/.rvm/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/eslint-plugin-typescript-eslint: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66830:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140464:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141436:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141358:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1183:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject",
+      "lint": "eslint '*/**/*.{ts,tsx}' --max-warnings=0 --fix",
+      "prettier": "prettier --check '*/**/*.{ts,tsx}'"
+    },
+    "dependencies": {
+      "@expo-google-fonts/nunito": "^0.1.0",
+      "expo": "~39.0.2",
+      "expo-font": "~8.3.0",
+      "expo-status-bar": "~1.0.2",
+      "react": "16.13.1",
+      "react-dom": "16.13.1",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
+      "react-native-maps": "^0.27.1",
+      "react-native-web": "~0.13.12"
+    },
+    "devDependencies": {
+      "@commitlint/cli": "^11.0.0",
+      "@commitlint/config-conventional": "^11.0.0",
+      "@react-native-community/eslint-config": "^2.0.0",
+      "@types/react": "~16.9.35",
+      "@types/react-dom": "~16.9.8",
+      "@types/react-native": "~0.63.2",
+      "@typescript-eslint/eslint-plugin": "^4.4.1",
+      "@typescript-eslint/parser": "^4.4.1",
+      "eslint": "^7.11.0",
+      "eslint-config-airbnb": "^18.2.0",
+      "eslint-config-prettier": "^6.12.0",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-jsx-a11y": "^6.3.1",
+      "eslint-plugin-prettier": "^3.1.4",
+      "eslint-plugin-react": "^7.21.4",
+      "eslint-plugin-react-hooks": "^4.1.2",
+      "husky": "^4.3.0",
+      "lint-staged": "^10.4.0",
+      "prettier": "^2.1.2",
+      "react-native-web": "~0.13.7",
+      "typescript": "~3.9.5"
+    },
+    "private": true,
+    "husky": {
+      "hooks": {
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "*.{ts,tsx}": [
+        "prettier --write",
+        "npm run lint"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
